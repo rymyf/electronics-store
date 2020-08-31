@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="HomeAboutus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+   <!-- Add icon library -->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+.mySlides {display:none;}
+
+#content::after{
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 0%;
+}
+</style>
+
+</head>
+<body>
+<div id="content">
+  <div class="site-branding">
+  <div class="logo">
+    <h1 style="margin-top=0px">e-Electronics</h1>
+    </div>
+    <!-- Navigation -->
+    <nav class="menu">
+      <a href="Home.html" style="background-color: #ddd;color: black;" class="w3-button w3-bar-item">Home</a>
+      <a href="Products.php" class="w3-button w3-bar-item">Products</a>
+      <a href="AboutUs.html" class="w3-button w3-bar-item">About Us</a>
+      <a href="LogIn.html" style="float:right;">Log In</a>
+      <a href="SignUp.html" style="float:right;">Sign Up</a>
+
+    </nav>
+    </div>
+
+  <div class="slideshow" style="max-width:100%">
+    <img class="mySlides" src="pics/i4.jpeg" style="width:100%">
+    <img class="mySlides" src="pics/i2.jpeg" style="width:100%">
+
+  </div>
+<!-- slide show javascript-->
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}
+                  x[myIndex-1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
+
+<!-- End of the slide show javascript part-->
+
+   <!-- Sales Part-->
+<div id="control">
+
+<table id="sales">
+  <tr>
+  <h1 style="font-family:Palatino Linotype;">Sales</h1>
+</tr>
+  <tr>
+    <td>
+       <img src="pics/p1.jpeg" alt="Alps" style="width:100%">
+          <button onclick="Products.php"> Sales 30% </button>
+ </td>
+ <td>
+   <img src="pics/p2.jpeg" alt="Alps" style="width:100%">
+      <button onclick="Products.php"> Sales 30% </button>
+</td>
+<td>
+  <img src="pics/p3.jpeg" alt="Alps" style="width:100%">
+    <button onclick="Products.php"> Sales 30% </button>
+
+</td>
+<td>
+  <img src="pics/p4.jpeg" alt="Alps" style="width:100%">
+    <button onclick="Products.php"> Sales 30% </button>
+</tr>
+<tr>
+  <td>
+     <img src="pics/p1.jpeg" alt="Alps" style="width:100%">
+        <button onclick="Products.php"> Sales 30% </button>
+</td>
+<td>
+ <img src="pics/p2.jpeg" alt="Alps" style="width:100%">
+  <button onclick="Products.php"> Sales 30% </button>
+</td>
+<td>
+<img src="pics/p3.jpeg" alt="Alps" style="width:100%">
+    <button onclick="Products.php"> Sales 30% </button>
+
+</td>
+<td>
+<img src="pics/p4.jpeg" alt="Alps" style="width:100%">
+  <button onclick="Products.php"> Sales 30% </button>
+</tr>
+
+</table>
+</div>
+</div>
+
+   <!-- Footer -->
+   <footer id="footer">
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-google"></a>
+     <a href="#" class="fa fa-youtube"></a>
+     <a href="#" class="fa fa-instagram"></a>
+     <a href="#" class="fa fa-pinterest"></a>
+     <a href="#" class="fa fa-snapchat-ghost"></a>
+   </footer>
+
+
+</body>
+</html>

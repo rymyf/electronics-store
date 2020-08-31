@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylepro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+   <!-- Add icon library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style type="text/css"media="screen">
+     div form{
+       padding: 20px;
+       text-align: center;
+       border:none;
+     }
+     .addproduct{
+         float: left;
+         width: 80%;
+
+       }
+     .addproduct input,select{
+       width: 50%;
+       padding: 15px;
+       margin: 5px 0 22px 0;
+       display: inline-block;
+       border: none;
+       background: #f1f1f1;
+     }
+     button{
+       width: 50%;
+     }
+
+   </style>
+</head>
+<body>
+
+<div class="addproduct">
+  <form action="AddProduct.php" method="post" enctype="multipart/form-data">
+    <h2 style="color: #253147;">Add Product</h2>
+    <input type="file" name="imageUpload" id="imageUpload">
+    <input type="text" name="name" placeholder="Product Name"value="">
+    <input type="text" name="price" placeholder="Product Price" value="">
+    <select class="" name="type">
+      <option value="Phones">Phones</option>
+      <option value="Tablets">Tablets</option>
+      <option value="Laptops">Laptops</option>
+    </select>
+    <button type="submit" name="submit">Add</button>
+  </form>
+</div>
+
+</body>
+</html>
